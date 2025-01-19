@@ -4,9 +4,11 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { webpackBundler } from '@vuepress/bundler-webpack'
 
 export default defineUserConfig({
+
   title: "vuepress-theme-reco",
   description: "Just playing around",
   bundler: viteBundler(),
+  base:"/myblog/",
   // bundler: webpackBundler(),
   theme: recoTheme({
     logo: "/logo.png",
