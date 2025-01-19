@@ -32,6 +32,9 @@ jobs:
       - name: 安装依赖
         run: npm install
 
+      - name: Fix file permissions
+        run: chmod +x ./node_modules/.bin/vuepress
+
       - name: 构建包
         env:
           NODE_OPTIONS: --max_old_space_size=8192
