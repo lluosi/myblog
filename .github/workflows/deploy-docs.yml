@@ -32,11 +32,11 @@ jobs:
       - name: 安装依赖
         run: npm ci
 
-      - name: 构建文档
+      - name: 构建包
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
-          npm run docs:build
+          vuepress build docs
           > docs/.vuepress/dist/.nojekyll
 
       - name: 部署文档
