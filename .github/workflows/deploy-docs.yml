@@ -38,7 +38,6 @@ jobs:
       - name: 构建包
         run: |-
           npm run build
-          > docs/.vuepress/dist/.nojekyll
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
