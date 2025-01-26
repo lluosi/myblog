@@ -3,6 +3,7 @@ import recoTheme from "vuepress-theme-reco";
 import { viteBundler } from '@vuepress/bundler-vite'
 import { webpackBundler } from '@vuepress/bundler-webpack'
 
+
 export default defineUserConfig({
 
   title: "my blog",
@@ -44,5 +45,6 @@ export default defineUserConfig({
       },
     ],
   }),
+
   // debug: true,
 });
